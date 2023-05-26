@@ -1,0 +1,6 @@
+{
+	"id" : 1,
+	"Student" : "Radu Neaca",
+	"Age" : 20,
+	"Grades" : [10,9,9,10,9,10]
+}

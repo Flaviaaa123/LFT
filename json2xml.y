@@ -54,7 +54,7 @@ char *string;
 program:
       OPENBRACES {printf("%s\n","<object1>",$1);fprintf(out,"%s\n","<object1>",$1);} body CLOSEBRACES {printf("%s\n","<object1>",$3);fprintf(out,"%s\n","<object1>",$3);} 
       |
-      OPENBRACES CLOSEBRACES{/*burayı unutma*/}
+      OPENBRACES CLOSEBRACES{}
       ; 	 	
 body: 
      VAR COLON val CMM  {char *x= strndup(++$1,strlen($1)-2);check(x);printf("    <%s>%s</%s>\n",x,$3,x);fprintf(out,"    <%s>%s</%s>\n",x,$3,x);} body
